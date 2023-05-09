@@ -22,22 +22,27 @@
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;600&family=Aladin&family=Poppins&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-custom fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="">{{ config('app.name') }}</a>
+            <img src="{{ asset('img/landing/logo.png') }}" style="max-width:10%" alt="">
+            {{-- <a class="navbar-brand" href="">{{ config('app.name') }}</a> --}}
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    {{-- <li class="nav-item mr-sm-3 mb-2 mb-sm-0">
+
+                    <li class="nav-item mr-sm-3 mb-2 mb-sm-0">
                         <div class="dropdown">
                             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -48,7 +53,7 @@
                                 <a class="dropdown-item" href="{{url('en')}}">English</a>
                             </div>
                         </div>
-                    </li> --}}
+                    </li>
                     <li class="nav-item">
                         <a class="btn btn-success" href="{{url('login')}}">@lang('landing.loginOrRegister')</a>
                     </li>
@@ -58,12 +63,12 @@
     </nav>
 
     <!-- Header -->
-    <header class="bg-blue py-5">
+    <header class="bg-hero py-5">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-lg-6">
-                    <h1 class="display-3 text-white mt-5 mb-2">@lang('landing.welcome')</h1>
-                    <p class="lead mb-5 text-white-50">@lang('landing.tagline')</p>
+                    <h1 class="display-3 text-hero mt-5 mb-2">@lang('landing.welcome')</h1>
+                    <p class="lead mb-5 text-hero ">@lang('landing.tagline')</p>
                 </div>
                 <div class="col-lg-6">
                     <img class="img-fluid d-none d-lg-block" src="{{asset('img/landing/header.png')}}" alt="" srcset="">
@@ -77,7 +82,7 @@
     </section>
 
     <!-- Page Content -->
-    <section class="kelebihan bg-blue text-white">
+    <section class="kelebihan  ">
         <div class="container p-5">
             <div class="row">
                 <div class="col-lg-6">
@@ -92,7 +97,7 @@
         </div>
     </section>
 
-    <section class="kelebihan bg-blue text-white">
+    <section class="kelebihan  ">
         <div class="container p-5">
             <div class="row">
                 <div class="col-lg-6">
@@ -108,86 +113,29 @@
         </div>
     </section>
 
-    <section class="kelebihan bg-blue text-white">
-        <div class="container p-5">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h4>Pegawai Profesional</h4>
-                    <p>Laundry kami terdiri dari pegawai-pegawai yang profesional yang mampu bekerja dalam tim dengan
-                        cukup baik dan handal di bidangnya sehingga membuat laundry kami minim kesalahan</p>
-                </div>
-                <div class="col-lg-6">
-                    <img class="img-fluid d-none d-lg-block" src="{{asset('img/landing/pegawai.png')}}" alt=""
-                        srcset="">
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="text-center p-5">
-        <h3>Apa saja yang bisa kami laundry?</h3>
-    </section>
 
-    <section class="bg-blue p-5 text-center">
-        <div class="container">
-            <div class="row flex-row flex-nowrap kategori">
-                <div class="col-4 mb-2">
-                    <div class="card">
-                        <img src="{{asset('img/landing/Baju.jpg')}}" class="card-img-top" alt="">
-                        <div class="card-body d-none d-lg-block">
-                            <p class="card-text">Baju</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 mb-2">
-                    <div class="card">
-                        <img src="{{asset('img/landing/Celana.jpg')}}" class="card-img-top" alt="">
-                        <div class="card-body d-none d-lg-block">
-                            <p class="card-text">Celana</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 mb-2">
-                    <div class="card">
-                        <img src="{{asset('img/landing/Jas.jpg')}}" class="card-img-top" alt="">
-                        <div class="card-body d-none d-lg-block">
-                            <p class="card-text">Jas</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 mb-2">
-                    <div class="card">
-                        <img src="{{asset('img/landing/Selimut.jpg')}}" class="card-img-top" alt="">
-                        <div class="card-body d-none d-lg-block">
-                            <p class="card-text">Selimut</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
+
 
     <section class="text-center p-5">
         <h3>Temukan kami!</h3>
     </section>
 
-    <section class="text-white bg-blue">
+    <section class=" ">
         <div class="container p-5">
             <div class="row">
                 <div class="col-md-6 mb-4 mb-sm-0">
                     <h5>Alamat</h5>
-                    <p>Jalan Raya Sempidi No. 69 Lukluk, Mengwi, Badung, Bali</p>
+                    <p>Jl. Mayjen Sungkono Gg. Parang Garuda RT 05 RW 02 Dusun Darang Kelurahan, Tamanan, Cengkong, Tamanan, Kec. Trenggalek, Kabupaten Trenggalek, Jawa Timur 66312</p>
                     <br>
                     <h5>Kontak</h5>
-                    <p>laundryxyz@gmail.com</p>
-                    <p>(0361)123456</p>
-                    <p>081234567890</p>
+                    <p>bqalaundry@gmail.com</p>
+                    <p>+62 822-2932-8566(laila)</p>
+                    <p>+62 853-3573-4064(riska)</p>
                 </div>
                 <div class="col-md-6">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.0551329606237!2d115.18456241433559!3d-8.59069798958535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2394d265755b3%3A0xb025730a3074e799!2sJl.%20Raya%20Lukluk%20-%20Sempidi%2C%20Lukluk%2C%20Kec.%20Mengwi%2C%20Kabupaten%20Badung%2C%20Bali!5e0!3m2!1sid!2sid!4v1589257661013!5m2!1sid!2sid"
-                        width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""
-                        aria-hidden="false" tabindex="0"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.4375081050316!2d111.69823071110945!3d-8.05677568045987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e791acd716d0e7f%3A0xc9c80d06ea32bcf!2sPPPM%20BQA%20(BAITUL%20QUR&#39;AN%20AL%20FARISY)!5e0!3m2!1sid!2sid!4v1683557199946!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -195,9 +143,9 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer class="py-5 text-white bg-dark">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; {{config('app.name')}} 2020</p>
+            <p class="m-0 text-center ">Copyright &copy; {{config('app.name')}} 2023</p>
         </div>
         <!-- /.container -->
     </footer>

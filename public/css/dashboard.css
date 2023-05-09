@@ -1,5 +1,5 @@
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
 }
 
 .member-icon {
@@ -19,4 +19,7 @@ body {
 
 .img-fit {
     object-fit: cover;
+}
+.sidebar {
+    background: #ffffff;
 }

@@ -28,7 +28,7 @@
                 <a href="{{ route('member.points.index') }}"
                     class="nav-link {{ request()->routeIs('member.points.index') ? 'active' : '' }}">
                     <i class="nav-icon fas fa-star"></i>
-                    <p>Tukar Poin</p>
+                    <p>Penukaran Kupon</p>
                 </a>
             </li>
             <li class="nav-item">
@@ -46,11 +46,20 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a href="/"
+                    class="nav-link">
+                    <i class="nav-icon fas fa-sign-in-alt"></i>
+
+                    <p>Kembali ke Menu</p>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a href="#" class="nav-link" data-toggle="modal" data-target="#logoutModal">
                     <i class="nav-icon fas fa-sign-out-alt"></i>
                     <p>Logout</p>
                 </a>
             </li>
+
         </ul>
     </nav>
     <!-- /.sidebar-menu -->

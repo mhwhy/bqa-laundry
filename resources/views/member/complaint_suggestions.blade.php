@@ -63,16 +63,8 @@
                                     <table class="table">
                                         <tbody>
                                             <tr>
-                                                <td>Line</td>
-                                                <td>@idline</td>
-                                            </tr>
-                                            <tr>
                                                 <td>Whatsapp</td>
-                                                <td>081999999</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Telepon</td>
-                                                <td>(0361)123456</td>
+                                                <td>+62 822-2932-8566 ( laila )</td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2">Ketentuan: Hanya melayani saat jam kerja</td>
