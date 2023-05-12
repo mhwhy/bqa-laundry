@@ -28,11 +28,10 @@
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
-        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <aside class="main-sidebar sidebar-light-success elevation-4">
             <!-- Brand Logo -->
             <a href="" class="brand-link mt-2">
-                <i class="fas fa-tshirt brand-image mt-1 ml-3"></i>
-                <h4 class="brand-text text-center">{{ config('app.name') }}</h4>
+                <p class="text-center"> <img src="{{ asset('img/landing/logo.png') }}" style="max-width:70%" alt=""></p>
             </a>
 
             <!-- Sidebar -->

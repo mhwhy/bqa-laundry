@@ -12,6 +12,7 @@ use App\Http\Controllers\Admin\Transaction\PrintTransactionController;
 use App\Http\Controllers\Admin\Transaction\TransactionController;
 use App\Http\Controllers\Admin\Transaction\TransactionSessionController;
 use App\Http\Controllers\Admin\VoucherController;
+use Illuminate\Support\Facades\Route;
 
 Route::get('/', [DashboardController::class, 'index'])->name('index');
 

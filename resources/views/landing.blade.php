@@ -67,11 +67,12 @@
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-lg-6">
-                    <h1 class="display-3 text-hero mt-5 mb-2">@lang('landing.welcome')</h1>
+                    <h1 class="display-4 text-hero mt-5 mb-2">@lang('landing.welcome')</h1>
                     <p class="lead mb-5 text-hero ">@lang('landing.tagline')</p>
+                    <a class="pesan" href="https://wa.me/+6282229328566">Pesan Sekarang</a>
                 </div>
                 <div class="col-lg-6">
-                    <img class="img-fluid d-none d-lg-block" src="{{asset('img/landing/header.png')}}" alt="" srcset="">
+                    <img class="img-fluid d-none d-lg-block" src="{{asset('img/landing/hero.jpg')}}" alt="" srcset="">
                 </div>
             </div>
         </div>

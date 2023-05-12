@@ -6,6 +6,7 @@ use App\Http\Controllers\Member\PointController;
 use App\Http\Controllers\Member\PriceListController;
 use App\Http\Controllers\Member\TransactionController;
 use App\Http\Controllers\Member\VoucherController;
+use Illuminate\Support\Facades\Route;
 
 Route::get('/', [DashboardController::class, 'index'])->name('index');
 Route::get('/price-lists', [PriceListController::class, 'index'])->name('price_lists.index');
