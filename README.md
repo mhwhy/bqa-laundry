@@ -18,6 +18,8 @@ php artisan key:generate
 php artisan migrate:fresh --seed
 ```
 
-## Informasi ++
+## Informasi++
 
 Aplikasi ini juga menerapkan queue database untuk menghapus foto profil ketika diganti, kalian bisa mengganti environment variable `QUEUE_CONNECTION` menjadi database.
+
+Daftar/Register admin dengan url `/register-admin`. Secret key dapat diubah di env atau default "Secret123".
