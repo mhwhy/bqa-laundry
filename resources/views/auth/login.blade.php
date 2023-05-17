@@ -8,7 +8,7 @@
             <div class="col-lg-7">
                 <div class="card bg-light o-hidden border-0 shadow-lg my-5">
                     <div class="card-body p-5">
-                        <h3 class="text-center mb-3">@lang('auth.log_title')</h3>
+                       <h3 class="text-center mb-3"><img src="{{ asset("assets/img/logo.png") }}" style="max-width:100px" alt=""></h3>
                         @if (session('error'))
                             <div class="alert alert-danger alert-dismissible fade show" role="alert">
                                 {{ session('error') }}

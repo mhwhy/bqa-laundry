@@ -72,6 +72,12 @@
                     <p>Logout</p>
                 </a>
             </li>
+            <li class="nav-item">
+                <a href="/" class="nav-link" >
+                    <i class="nav-icon fas fa-sign-in-alt"></i>
+                    <p>Beranda</p>
+                </a>
+            </li>
         </ul>
     </nav>
     <!-- /.sidebar-menu -->
