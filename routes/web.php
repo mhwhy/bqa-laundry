@@ -6,6 +6,7 @@ use App\Http\Controllers\LocaleController;
 use App\Http\Controllers\Profile\ProfileController;
 use App\Http\Controllers\Profile\ProfilePasswordController;
 use App\Http\Controllers\Profile\ProfilePhotoController;
+use App\Http\Controllers\Auth\SocialiteController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 
@@ -52,3 +53,6 @@ Route::group([
 Route::get('/{locale}', LocaleController::class);
 
 //sas
+
+Route::get('/auth/{provider}', [SocialiteController::class, 'redirectToProvider']);
+Route::get('/auth/{provider}/callback', [SocialiteController::class, 'handleProvideCallback']);

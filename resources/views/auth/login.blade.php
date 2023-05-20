@@ -61,7 +61,9 @@
                             <button class="btn btn-primary btn-block" type="submit">@lang('auth.log_title')</button>
                         </form>
                         <hr>
-                        <button class="btn btn-success btn-block" type="submit">Daftar Dengan Google</button>
+                        <a href="/auth/google">
+                            <button class="btn btn-success btn-block" type="submit">Daftar Dengan Google</button>
+                        </a>
                         <hr>
                         <div class="text-center">
                             <a href="{{ url('register') }}">@lang('auth.register_link')</a>

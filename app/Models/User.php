@@ -126,6 +126,14 @@ class User extends Authenticatable implements UploadedFilesInterface
         return $this->getFileStorage()->url($this->getFullFilePath());
     }
 
+    //relasi many ke model table social account
+    public function socialAccounts()
+    {
+        return  $this->hasMany(SocialAccount::class);
+    }
+
+
+
     /**
      * Password mutator
      *
