@@ -5,7 +5,7 @@
  */
 body {
     padding-top: 56px;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -13,9 +13,35 @@ header {
 }
 
 .bg-blue {
-    background-color: #00B4D7;
+    background-color: #00b4d7;
+}
+
+.bg-hero {
+    /* background-image: url(../img/landing/bghero.jpg); */
+}
+
+.bg-custom {
+    background-color: rgba(0, 0, 0, 0.126);
+}
+.text-hero {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
 }
 
 .kategori {
     overflow-x: auto;
+}
+
+.pesan {
+    padding: 20px;
+    background: #09b412;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.pesan:hover {
+    text-decoration: none;
+    background: #0ea290;
+    color: #ffffff;
 }
